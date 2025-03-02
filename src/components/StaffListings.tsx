@@ -5,30 +5,30 @@ import { Button } from "@/components/ui/button";
 import { Search, MapPin, Briefcase, ArrowRight } from 'lucide-react';
 
 // Updated job data for hospitality industry
-const jobsData = [
+const staffData = [
   {
     id: 1,
-    title: "Waiter/Waitress",
-    organization: "Luxury 5-Star Hotel",
-    location: "Mumbai, MH",
+    title: "Waiter",
+    // organization: "Luxury 5-Star Hotel",
+    // location: "Mumbai, MH",
     type: "Full-time",
     category: "Service",
     description: "Provide exceptional dining service to guests in a high-end restaurant setting."
   },
   {
     id: 2,
-    title: "Housekeeping Staff",
-    organization: "Premium Hotel Chain",
-    location: "Delhi, DL",
+    title: "Cook",
+    // organization: "Luxury Resort",
+    // location: "Goa",
     type: "Full-time",
-    category: "Housekeeping",
-    description: "Maintain cleanliness and presentation of guest rooms and public areas."
+    category: "Restaurant",
+    description: "Mix and serve drinks with flair, maintain bar inventory and cleanliness."
   },
   {
     id: 3,
-    title: "Front Desk Receptionist",
-    organization: "Business Hotel",
-    location: "Bangalore, KA",
+    title: "Desk Receptionist",
+    // organization: "Business Hotel",
+    // location: "Bangalore, KA",
     type: "Full-time",
     category: "Front Office",
     description: "Handle guest check-ins/check-outs and provide information about hotel services."
@@ -36,8 +36,8 @@ const jobsData = [
   {
     id: 4,
     title: "Steward",
-    organization: "Fine Dining Restaurant",
-    location: "Pune, MH",
+    // organization: "Fine Dining Restaurant",
+    // location: "Pune, MH",
     type: "Full-time",
     category: "Service",
     description: "Assist kitchen and service staff, manage dishwashing and maintain kitchen cleanliness."
@@ -45,34 +45,34 @@ const jobsData = [
   {
     id: 5,
     title: "Helper - Kitchen",
-    organization: "Catering Company",
-    location: "Hyderabad, TS",
+    // organization: "Catering Company",
+    // location: "Hyderabad, TS",
     type: "Part-time",
-    category: "Kitchen",
+    category: "Restaurant",
     description: "Assist chefs with food preparation, cleaning, and basic cooking tasks."
   },
   {
     id: 6,
-    title: "Bartender",
-    organization: "Luxury Resort",
-    location: "Goa",
+    title: "Housekeeping Staff",
+    // organization: "Premium Hotel Chain",
+    // location: "Delhi, DL",
     type: "Full-time",
-    category: "Bar",
-    description: "Mix and serve drinks with flair, maintain bar inventory and cleanliness."
+    category: "Housekeeping",
+    description: "Maintain cleanliness and presentation of guest rooms and public areas."
   }
 ];
 
 // Updated categories for hospitality industry
-const categories = ["All", "Service", "Housekeeping", "Front Office", "Kitchen", "Bar"];
+const categories = ["All", "Service", "Housekeeping", "Front Office", "Restaurant"];
 
-const JobListings = () => {
+const StaffListings = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   
   // Filter jobs based on search term and category
-  const filteredJobs = jobsData.filter(job => {
+  const filteredJobs = staffData.filter(job => {
     const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                          job.organization.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                          // job.organization.toLowerCase().includes(searchTerm.toLowerCase()) ||
                           job.description.toLowerCase().includes(searchTerm.toLowerCase());
     
     const matchesCategory = selectedCategory === 'All' || job.category === selectedCategory;
@@ -81,24 +81,24 @@ const JobListings = () => {
   });
 
   return (
-    <section id="jobs" className="py-20 md:py-28 bg-secondary/30">
+    <section id="staff" className="py-20 md:py-28 bg-secondary/30">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto mb-16 text-center">
-          <p className="text-primary font-medium mb-3 animate-fade-in">CAREER OPPORTUNITIES</p>
+          <p className="text-primary font-medium mb-3 animate-fade-in">STAFF</p>
           <h2 className="text-3xl md:text-4xl font-bold animate-fade-in">
-            Hospitality Jobs With Guaranteed Placement
+            We've all types of staff available for you!
           </h2>
           <p className="mt-4 text-foreground/70 animate-fade-in">
-            Apply today and get placed within 48 hours - guaranteed!
+            The right time is now! Reach out to us today, and we'll help you find the right staff for your business.
           </p>
           <div className="h-1 w-20 bg-accent mx-auto mt-6 rounded-full animate-fade-in"></div>
         </div>
 
         {/* Search and filter */}
         <div className="mb-10 animate-fade-in">
-          <div className="bg-white rounded-xl shadow-sm border border-border/50 p-6">
-            <div className="flex flex-col md:flex-row gap-4">
-              <div className="relative flex-1">
+          {/* <div className="bg-white rounded-xl shadow-sm border border-border/50 p-6"> */}
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
+              {/* <div className="relative flex-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-foreground/40" size={18} />
                 <input
                   type="text"
@@ -107,7 +107,7 @@ const JobListings = () => {
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
-              </div>
+              </div> */}
               <div className="flex flex-wrap gap-2">
                 {categories.map(category => (
                   <button
@@ -124,7 +124,7 @@ const JobListings = () => {
                 ))}
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
 
         {/* Job listings */}
@@ -144,30 +144,28 @@ const JobListings = () => {
                 </Badge>
               </div>
               <h3 className="text-xl font-semibold mb-2">{job.title}</h3>
-              <p className="text-primary font-medium mb-4">{job.organization}</p>
+              {/* <p className="text-primary font-medium mb-4">{job.organization}</p> */}
               
               <p className="text-foreground/70 mb-5 line-clamp-2">{job.description}</p>
               
               <div className="flex items-center text-sm text-foreground/60 mb-6">
-                <MapPin size={16} className="mr-1" /> {job.location}
+                {/* <MapPin size={16} className="mr-1" /> {job.location} */}
               </div>
               
-              <Button className="w-full mt-2 group">
+              {/* <Button className="w-full mt-2 group">
                 Apply Now
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </Button> */}
             </div>
           ))}
         </div>
         
         <div className="text-center mt-12 animate-fade-in">
-          <Button variant="outline" size="lg" className="shadow-sm">
-            View All Opportunities <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            and many more!
         </div>
       </div>
     </section>
   );
 };
 
-export default JobListings;
+export default StaffListings;

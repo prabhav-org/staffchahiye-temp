@@ -8,7 +8,7 @@ const About = () => {
         <div className="max-w-3xl mx-auto mb-16 text-center">
           <p className="text-primary font-medium mb-3 animate-fade-in">OUR MISSION</p>
           <h2 className="text-3xl md:text-4xl font-bold animate-fade-in">
-            Recruitment With a Social Purpose
+            Service With a Social Purpose
           </h2>
           <div className="h-1 w-20 bg-accent mx-auto mt-6 rounded-full animate-fade-in"></div>
         </div>
@@ -16,10 +16,13 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="glass-card p-8 md:p-10 rounded-2xl animate-fade-in">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-              At <span className="font-semibold">SocialHire</span>, we believe that talent should be directed toward solving our world's most pressing challenges. We've built a specialized recruitment platform that connects mission-driven professionals with organizations creating positive social change.
+              <strong>StaffChahiye</strong> started as a social service project to help underserved blue collar workers get employment and earn a livelihood for their families. 
+              <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mt-6">
+              Most of them aren't familar with technology and hence we help them get access to job opportunities with just a phone call or message.
+              </p>
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90 mt-6">
-              Every placement we make creates a double impact: helping organizations amplify their mission while enabling professionals to build meaningful careers aligned with their values.
+              There are about 400 Million+ unorganised workers in India and we envision to reach every last of them. Its a bold undertaking, right? but this journey will be worth it.
             </p>
           </div>
 
@@ -28,17 +31,17 @@ const About = () => {
               {
                 icon: Heart,
                 title: "Value-Aligned Matching",
-                description: "We carefully match candidates with organizations that share their core values and vision for social impact."
+                description: "We carefully match candidates with businesses that match the requirements and ensure a win-win hire."
               },
               {
                 icon: Users,
-                title: "Diverse Talent Pool",
-                description: "Our network includes professionals from all backgrounds, bringing diverse perspectives to social-impact work."
+                title: "Diverse Pool",
+                description: "Our candidates network includes workers from all backgrounds."
               },
               {
                 icon: Building,
-                title: "Partner Organizations",
-                description: "We work with nonprofits, B-corps, social enterprises, and impact-focused divisions of larger companies."
+                title: "Partner businesses",
+                description: "We work with all small and big businesses to help them with staff requirements."
               }
             ].map((item, index) => (
               <div 

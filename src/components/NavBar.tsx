@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className="container-custom flex justify-between items-center">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/4c9f1e8b-e4d6-479f-b2fd-1dd1278bd711.png" 
+            src="/brandlogo_transparent.png" 
             alt="StaffChahiye.com Logo" 
             className="h-10 md:h-12"
           />
@@ -42,7 +42,7 @@ const NavBar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          {['Home', 'About', 'Jobs', 'Partners', 'Contact'].map((item) => (
+          {['Home', 'About', 'Staff', /*'Partners', */ ].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -52,7 +52,7 @@ const NavBar = () => {
             </a>
           ))}
           <a href="#contact" className="button-primary">
-            Apply Now
+            Contact us!
           </a>
         </nav>
 
@@ -74,7 +74,7 @@ const NavBar = () => {
         )}
       >
         <nav className="flex flex-col items-center space-y-6 p-8">
-          {['Home', 'About', 'Jobs', 'Partners', 'Contact'].map((item) => (
+          {['Home', 'About', 'Staff', /*'Partners',*/].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -89,7 +89,7 @@ const NavBar = () => {
             className="button-primary w-full text-center mt-4"
             onClick={toggleMenu}
           >
-            Apply Now
+            Contact us!
           </a>
         </nav>
       </div>

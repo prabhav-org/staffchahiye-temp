@@ -21,27 +21,27 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <img 
-              src="/lovable-uploads/4c9f1e8b-e4d6-479f-b2fd-1dd1278bd711.png" 
+              src="/logo_transparent.png" 
               alt="StaffChahiye.com Logo" 
               className="h-24 md:h-32"
             />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight animate-fade-in">
-            Hospitality Staff <span className="text-primary">Within 48 Hours</span>
+            Get the right Staff, <br></br><span className="text-primary">at the right time!</span>
           </h1>
           
           <p className="mt-6 text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            We match qualified hospitality professionals with top employers. Get placed in just 2 days with our guaranteed placement program.
+          The only service you'll ever need for your staff requirements (seriously)!
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <a href="#jobs" className="button-primary">
-              Browse Opportunities
+            <a href="#contact" className="button-primary">
+              Contact us!
             </a>
-            <a href="#contact" className="button-secondary">
+            {/* <a href="#contact" className="button-secondary">
               Apply Today
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

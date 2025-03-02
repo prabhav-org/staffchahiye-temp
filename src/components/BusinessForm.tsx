@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CheckCircle } from 'lucide-react';
 
-const CandidateForm = () => {
+const BusinessForm = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -64,22 +64,21 @@ const CandidateForm = () => {
   return (
     <section id="contact" className="py-20 md:py-28">
       <div className="container-custom">
+        {/* left side */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <p className="text-primary font-medium mb-3">48-HOUR PLACEMENT GUARANTEE</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get Hired Within 2 Days</h2>
+            <p className="text-primary font-medium mb-3">StaffChahiye for your business</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get your Staff Within 24-48Hours!</h2>
             
             <p className="text-foreground/70 mb-8">
-              Submit your profile today and get placed in a top hospitality position within 48 hours - guaranteed! Our specialized recruiters work with premium hotels, restaurants, and resorts to fill urgent positions with qualified candidates like you.
+              Submit your request today and get your right staff at the right time within 24-48 hours (seriously)!
             </p>
             
             <div className="space-y-5">
               {[
-                "Guaranteed placement within 48 hours",
-                "No placement fee for candidates",
-                "Positions at top hospitality establishments",
-                "Competitive salary packages",
-                "Long-term career growth opportunities"
+                "Services starting from INR 2,000 only",
+                "Most diverse staff portfolio available",
+                "We believe in quality over quantity",
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
@@ -88,8 +87,8 @@ const CandidateForm = () => {
               ))}
             </div>
           </div>
-          
-          <div className="glass-card p-8 rounded-2xl animate-fade-in">
+          {/* business AIRTABLE form */}
+          {/* <div className="glass-card p-8 rounded-2xl animate-fade-in">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name</Label>
@@ -194,11 +193,11 @@ const CandidateForm = () => {
                 {isSubmitting ? "Submitting..." : "Apply Now - Get Hired in 48 Hours"}
               </Button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
   );
 };
 
-export default CandidateForm;
+export default BusinessForm;
