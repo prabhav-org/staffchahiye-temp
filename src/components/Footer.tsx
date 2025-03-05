@@ -50,7 +50,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
                 <span className="text-foreground/70">
-                  Atal Innovation Centre,<br />
+                  Atal Incubation Centre,<br />
                   Banaras Hindu University (BHU),<br />
                   India, 221005.
                 </span>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <a href="staffchahiye@gmail.com" className="text-foreground/70 hover:text-primary transition-colors">
-                  staffchahiye@gmail.com
+                  contact@staffchahiye.com
                 </a>
               </li>
             </ul>
