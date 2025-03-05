@@ -68,15 +68,15 @@ const BusinessForm = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <p className="text-primary font-medium mb-3">StaffChahiye for your business</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get your Staff Within 24-48Hours!</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get your Staff Within 24-72 Hours!</h2>
             
             <p className="text-foreground/70 mb-8">
-              Submit your request today and get your right staff at the right time within 24-48 hours (seriously)!
+              Submit your request today and get your right staff at the right time within 24-72hours (seriously)!
             </p>
             
             <div className="space-y-5">
               {[
-                "Services starting from INR 2,000 only",
+                "Services starting at just INR 2,000 only",
                 "Most diverse staff portfolio available",
                 "We believe in quality over quantity",
               ].map((item, index) => (
@@ -88,112 +88,22 @@ const BusinessForm = () => {
             </div>
           </div>
           {/* business AIRTABLE form */}
-          {/* <div className="glass-card p-8 rounded-2xl animate-fade-in">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  placeholder="Enter your full name"
-                />
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email Address</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    placeholder="your.email@example.com"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    required
-                    placeholder="Your WhatsApp number"
-                  />
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="position">Desired Position</Label>
-                <Select onValueChange={(val) => handleSelectChange(val, 'position')} required>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select position" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="waiter">Waiter/Waitress</SelectItem>
-                    <SelectItem value="housekeeping">Housekeeping Staff</SelectItem>
-                    <SelectItem value="receptionist">Front Desk Receptionist</SelectItem>
-                    <SelectItem value="steward">Steward</SelectItem>
-                    <SelectItem value="helper">Kitchen Helper</SelectItem>
-                    <SelectItem value="bartender">Bartender</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="resume">Resume/CV</Label>
-                <Input
-                  id="resume"
-                  name="resume"
-                  type="file"
-                  onChange={handleFileChange}
-                  accept=".pdf,.doc,.docx"
-                  className="file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-primary/10 file:text-primary hover:file:bg-primary/20 file:cursor-pointer file:rounded-md"
-                />
-                <p className="text-xs text-foreground/60 mt-1">Optional - Accepted formats: PDF, DOC, DOCX</p>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="experience">Experience Level</Label>
-                <Select onValueChange={(val) => handleSelectChange(val, 'experience')}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select your experience level" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="fresher">Fresher (No experience)</SelectItem>
-                    <SelectItem value="entry">Entry Level (0-1 year)</SelectItem>
-                    <SelectItem value="mid">Experienced (1-3 years)</SelectItem>
-                    <SelectItem value="senior">Senior (3+ years)</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="availability">When can you start?</Label>
-                <Select onValueChange={(val) => handleSelectChange(val, 'availability')}>
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select your availability" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="immediate">Immediately</SelectItem>
-                    <SelectItem value="week">Within a week</SelectItem>
-                    <SelectItem value="two-weeks">Within two weeks</SelectItem>
-                    <SelectItem value="month">Within a month</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Apply Now - Get Hired in 48 Hours"}
-              </Button>
-            </form>
-          </div> */}
+          <div className="glass-card p-8 rounded-2xl animate-fade-in">
+            <div className="airtable-embed-container" style={{ height: "600px", width: "100%" }}>
+              <iframe
+                className="airtable-embed"
+                src="https://airtable.com/embed/appqxTY1AbS6GBs8P/pagbIGTCMkNvZqu8b/form"
+                frameBorder="0"
+                width="100%"
+                height="100%"
+                style={{ background: "transparent", border: "none" }}
+                title="Business Staff Request Form"
+              ></iframe>
+            </div>
+            <p className="text-sm text-foreground/60 mt-4 text-center">
+              Submit your request and our team will get back to you within 24 hours.
+            </p>
+          </div>
         </div>
       </div>
     </section>
