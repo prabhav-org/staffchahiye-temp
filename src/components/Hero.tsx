@@ -1,5 +1,5 @@
-
 import { ArrowDownCircle } from 'lucide-react';
+import {FaWhatsapp} from 'react-icons/fa';
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -36,12 +36,24 @@ const Hero = () => {
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <a href="#contact" className="button-primary">
-              Contact us!
-            </a>
-            {/* <a href="#contact" className="button-secondary">
-              Apply Today
+            {/* <a 
+              href="https://wa.me/7304216059" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="button-primary"
+            >
+              Contact us on WhatsApp
             </a> */}
+            {/* Optional: Add a WhatsApp icon button */}
+            <a 
+              href="https://wa.me/7304216059" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="button-secondary flex items-center gap-2"
+            >
+              <FaWhatsapp className="w-5 h-5" /> 
+              Contact Us
+            </a>
           </div>
         </div>
       </div>

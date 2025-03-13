@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
@@ -51,8 +50,13 @@ const NavBar = () => {
               {item}
             </a>
           ))}
-          <a href="#contact" className="button-primary">
-            Contact us!
+          <a 
+            href="https://wa.me/7304216059" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="button-primary"
+          >
+            Contact us
           </a>
         </nav>
 
@@ -85,11 +89,13 @@ const NavBar = () => {
             </a>
           ))}
           <a 
-            href="#contact" 
+            href="https://wa.me/YOUR_PHONE_NUMBER_HERE" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="button-primary w-full text-center mt-4"
             onClick={toggleMenu}
           >
-            Contact us!
+            Contact us
           </a>
         </nav>
       </div>
