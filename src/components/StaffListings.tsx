@@ -47,7 +47,7 @@ const staffData = [
     title: "Helper - Kitchen",
     // organization: "Catering Company",
     // location: "Hyderabad, TS",
-    type: "Part-time",
+    type: "Full-time",
     category: "Restaurant",
     description: "Assist chefs with food preparation, cleaning, and basic cooking tasks."
   },
