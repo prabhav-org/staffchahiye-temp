@@ -21,9 +21,9 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <img 
-              src="/logo_transparent.png" 
-              alt="StaffChahiye.com Logo" 
-              className="h-24 md:h-32"
+              src="/logo2_transparent.png" 
+              alt="TheStaffCompany.com Logo" 
+              className="h-48 md:h-56"
             />
           </div>
           

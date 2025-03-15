@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="mb-4">
               <a href="#" className="text-2xl font-semibold tracking-tight flex items-center">
-                <span className="text-primary">Staff</span>
-                <span>Chahiye</span>
+                <span className="text-primary">The</span>
+                <span>StaffCompany</span>
               </a>
             </div>
             <p className="text-foreground/70 mb-6">
@@ -30,7 +30,7 @@ const Footer = () => {
                 { label: "About Us", href: "#about" },
                 { label: "Staff", href: "#staff" },
                 // { label: "Our Partners", href: "#partners" },
-                { label: "Join Talent Pool", href: "#contact" }
+                // { label: "Join Talent Pool", href: "#contact" }
               ].map((link, index) => (
                 <li key={index}>
                   <a 
@@ -63,8 +63,10 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                <a href="staffchahiye@gmail.com" className="text-foreground/70 hover:text-primary transition-colors">
-                  contact@staffchahiye.com
+                <a target="_blank" 
+                href="mailto:contact@thestaffcompany.com" 
+                className="text-foreground/70 hover:text-primary transition-colors">
+                  contact@TheStaffCompany.com
                 </a>
               </li>
             </ul>
@@ -93,7 +95,7 @@ const Footer = () => {
             {['instagram'].map((social) => (
               <a 
                 key={social}
-                href="https://instagram.com/staffchahiye"
+                href="https://instagram.com/TheStaffCompany"
                 target='_blank'
                 className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-foreground/70 hover:bg-primary hover:text-white transition-colors"
                 aria-label={`Follow us on ${social}`}
@@ -111,7 +113,7 @@ const Footer = () => {
           </div>
           
           <p className="text-sm text-foreground/60">
-            &copy; {new Date().getFullYear()} StaffChahiye. All rights reserved.
+            &copy; {new Date().getFullYear()} TheStaffCompany. All rights reserved.
           </p>
           
           <div className="flex justify-center space-x-4 mt-2 text-xs text-foreground/50">
