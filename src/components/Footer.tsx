@@ -114,6 +114,8 @@ const Footer = () => {
           
           <p className="text-sm text-foreground/60">
             &copy; {new Date().getFullYear()} TheStaffCompany. All rights reserved.
+            <br/>
+            Built with 🧡 by Sujān
           </p>
           
           <div className="flex justify-center space-x-4 mt-2 text-xs text-foreground/50">
