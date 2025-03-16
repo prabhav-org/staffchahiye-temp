@@ -56,7 +56,7 @@ const NavBar = () => {
             rel="noopener noreferrer"
             className="button-primary"
           >
-            Contact us
+            WhatsApp us
           </a>
         </nav>
 
@@ -89,13 +89,13 @@ const NavBar = () => {
             </a>
           ))}
           <a 
-            href="https://wa.me/YOUR_PHONE_NUMBER_HERE" 
+            href="https://wa.me/7304216059" 
             target="_blank" 
             rel="noopener noreferrer"
             className="button-primary w-full text-center mt-4"
             onClick={toggleMenu}
           >
-            Contact us
+            WhatsApp us
           </a>
         </nav>
       </div>

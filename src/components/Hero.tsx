@@ -52,7 +52,7 @@ const Hero = () => {
               className="button-secondary flex items-center gap-2"
             >
               <FaWhatsapp className="w-5 h-5" /> 
-              Contact Us
+              WhatsApp Us
             </a>
           </div>
         </div>
