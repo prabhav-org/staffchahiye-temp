@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="mb-4">
               <a href="#" className="text-2xl font-semibold tracking-tight flex items-center">
-                <span className="text-primary">The</span>
-                <span>StaffCompany</span>
+                <span className="text-primary">Staff</span>
+                <span>Chahiye</span><span className='text-md text-secondary'>.com</span>
               </a>
             </div>
             <p className="text-foreground/70 mb-6">
@@ -58,15 +58,15 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <a href="tel:+917304216059" className="text-foreground/70 hover:text-primary transition-colors">
-                  (+91) 73042-16059
+                  +91 7304216059
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
                 <a target="_blank" 
-                href="mailto:contact@thestaffcompany.com" 
+                href="mailto:contact@staffchahiye.com" 
                 className="text-foreground/70 hover:text-primary transition-colors">
-                  contact@TheStaffCompany.com
+                  contact@StaffChahiye.com
                 </a>
               </li>
             </ul>
@@ -95,7 +95,7 @@ const Footer = () => {
             {['instagram'].map((social) => (
               <a 
                 key={social}
-                href="https://instagram.com/TheStaffCompany"
+                href="https://instagram.com/StaffChahiye"
                 target='_blank'
                 className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-foreground/70 hover:bg-primary hover:text-white transition-colors"
                 aria-label={`Follow us on ${social}`}
@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
           
           <p className="text-sm text-foreground/60">
-            &copy; {new Date().getFullYear()} TheStaffCompany. All rights reserved.
+            &copy; {new Date().getFullYear()} StaffChahiye. All rights reserved.
             <br/>
             Built with 🧡 by Sujān
           </p>

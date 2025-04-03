@@ -21,14 +21,14 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex justify-center mb-6">
             <img 
-              src="/logo2_transparent.png" 
-              alt="TheStaffCompany.com Logo" 
-              className="h-48 md:h-56"
+              src="/logo_transparent.png" 
+              alt="StaffChahiye.com Logo" 
+              className="h-32 sm:h-40 md:h-48 lg:h-56 w-auto object-contain"
             />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight animate-fade-in">
-            Get the right Staff, <br></br><span className="text-primary">at the right time!</span>
+            Get the Right Staff, <br></br><span className="text-primary">At the Right Time!</span>
           </h1>
           
           <p className="mt-6 text-xl md:text-2xl text-foreground/80 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -37,7 +37,7 @@ const Hero = () => {
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             {/* <a 
-              href="https://wa.me/7304216059" 
+              href="https://wa.me/9835126411" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-primary"
@@ -46,12 +46,12 @@ const Hero = () => {
             </a> */}
             {/* Optional: Add a WhatsApp icon button */}
             <a 
-              href="https://wa.me/7304216059" 
+              href="https://wa.me/9835126411" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="button-secondary flex items-center gap-2"
+              className="button-secondary flex items-center gap-2 bg-[#44d379] hover:bg-[#57d85c] text-white"
             >
-              <FaWhatsapp className="w-5 h-5" /> 
+              <FaWhatsapp className="w-10 h-10" /> 
               WhatsApp Us
             </a>
           </div>

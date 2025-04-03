@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
@@ -67,7 +66,7 @@ const BusinessForm = () => {
         {/* left side */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <p className="text-primary font-medium mb-3">TheStaffCompany for your business</p>
+            <p className="text-primary font-medium mb-3">StaffChahiye for your business</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get your Staff Within 24-72 Hours!</h2>
             
             <p className="text-foreground/70 mb-8">
@@ -76,7 +75,7 @@ const BusinessForm = () => {
             
             <div className="space-y-5">
               {[
-                "Services starting at just INR 2,000 only",
+                "Services starting at just INR 5,̶0̶0̶0̶ 2,000 only",
                 "Most diverse staff portfolio available",
                 "We believe in quality over quantity",
               ].map((item, index) => (
@@ -87,22 +86,21 @@ const BusinessForm = () => {
               ))}
             </div>
           </div>
-          {/* business AIRTABLE form */}
-          <div className="glass-card p-8 rounded-2xl animate-fade-in">
-            <div className="airtable-embed-container" style={{ height: "600px", width: "100%" }}>
+          {/* Instagram Feed */}
+          <div className="glass-card p-4 sm:p-8 rounded-2xl animate-fade-in">
+            <div 
+              className="instagram-embed-container h-[450px] md:h-[600px] w-full"
+            >
               <iframe
-                className="airtable-embed"
-                src="https://airtable.com/embed/appqxTY1AbS6GBs8P/pagbIGTCMkNvZqu8b/form"
-                frameBorder="0"
+                src="https://www.instagram.com/staffchahiye/embed"
                 width="100%"
                 height="100%"
                 style={{ background: "transparent", border: "none" }}
-                title="Business Staff Request Form"
+                title="StaffChahiye Instagram Feed"
+                loading="lazy"
+                allowTransparency={true}
               ></iframe>
             </div>
-            <p className="text-sm text-foreground/60 mt-4 text-center">
-              Submit your request and our team will get back to you within 24 hours.
-            </p>
           </div>
         </div>
       </div>
