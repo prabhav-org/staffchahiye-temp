@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
               </p>
               <p className="mt-2">
                 Email: contact@staffchahiye.com<br />
-                Phone: +91 9835126411
+                Phone: +91 7304216059
               </p>
             </section>
             

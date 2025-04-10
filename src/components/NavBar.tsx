@@ -92,7 +92,7 @@ const NavBar = () => {
             </a>
           ))}
           <a 
-              href="https://wa.me/9835126411" 
+              href="https://wa.me/7304216059" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-secondary flex items-center gap-2 bg-[#44d379] hover:bg-[#57d85c] text-white"
@@ -122,7 +122,7 @@ const NavBar = () => {
         <a href="#about" className="text-2xl text-foreground hover:text-primary" onClick={toggleMenu}>About</a>
         <a href="#services" className="text-2xl text-foreground hover:text-primary" onClick={toggleMenu}>Staff</a>
         <a 
-              href="https://wa.me/9835126411" 
+              href="https://wa.me/7304216059" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-secondary flex items-center gap-2 bg-[#44d379] hover:bg-[#57d85c] text-white"

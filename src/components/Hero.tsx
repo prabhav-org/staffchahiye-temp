@@ -37,7 +37,7 @@ const Hero = () => {
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             {/* <a 
-              href="https://wa.me/9835126411" 
+              href="https://wa.me/7304216059" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-primary"
@@ -46,7 +46,7 @@ const Hero = () => {
             </a> */}
             {/* Optional: Add a WhatsApp icon button */}
             <a 
-              href="https://wa.me/9835126411" 
+              href="https://wa.me/7304216059" 
               target="_blank" 
               rel="noopener noreferrer"
               className="button-secondary flex items-center gap-2 bg-[#44d379] hover:bg-[#57d85c] text-white"
