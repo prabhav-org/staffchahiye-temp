@@ -21,7 +21,7 @@ These Terms of Service (“Terms”) constitute a legally binding agreement betw
 4. Fees & Payment
 4.1 Fee Schedule. Businesses shall pay the Fees set forth in the applicable order form, rate card or invoice. All Fees are exclusive of taxes, which are the responsibility of the Business.
 4.2 Payment Terms. Unless otherwise agreed, payment processed for our services are pre-paid, hence, invoice would be generated and it has to be duly paid to use the service by the busienss.
-4.3 Refunds. All Fees are non‑refundable unless expressly agreed in writing by StaffChahiye.
+4.3 Refunds. All Fees are non‑refundable.
 
 5. Candidate Usage
 5.1 No Guarantee. We do not guarantee that Candidates will receive job offers or placements.
@@ -54,7 +54,7 @@ You agree to indemnify, defend and hold harmless StaffChahiye and its officers, 
 13.2 Effect. Upon termination, Business shall pay all accrued Fees; Sections 4, 6–13 survive.
 
 14. Governing Law & Dispute Resolution
-These Terms are governed by the laws of India. Any dispute shall be resolved exclusively in the courts of India.
+These Terms are governed by the laws of India. Any dispute shall be resolved exclusively in the courts of Uttar Pradesh, India.
 
 15. Amendments
 We may modify these Terms by posting a revised version on the Platform. Changes take effect upon posting; continued use constitutes acceptance.
